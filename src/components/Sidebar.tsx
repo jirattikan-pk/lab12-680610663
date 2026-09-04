@@ -4,7 +4,7 @@
 
 interface SideBarprops{
   username:string;
-  type:string;
+  type?: "admin" | "student";
 }
 export default function Sidebar( {username, type}: SideBarprops) {
   return (
