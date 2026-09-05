@@ -4,7 +4,7 @@ export default function TaskCard({ title, description, isDone} : TaskCardProps) 
     <div className="card mb-3">
       <div className="card-body">
         <div className="row align-items-center">
-          <div className="col-lg-8">
+          <div className="col-lg-4">
             <h5
               className={
                 isDone
@@ -14,6 +14,7 @@ export default function TaskCard({ title, description, isDone} : TaskCardProps) 
             >
               {title}
             </h5>
+            
           </div>
           <div className="col-lg-4">
             <p className="card-text m-0 text-muted">TODO: {description}</p>
